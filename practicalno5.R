@@ -1,0 +1,6 @@
+library("MASS")
+print(Cars93)
+car.data<-data.frame(Cars93$Cylinders,Cars93$Horsepower)
+car.data<-table(Cars93$Cylinders,Cars93$Horsepower)
+print(car.data)
+print(chisq.test(car.data))
